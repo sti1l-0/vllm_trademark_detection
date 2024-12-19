@@ -1,0 +1,9 @@
+vllm:
+  model: glm-4v-flash
+  auth: <your_token_here>
+  addr: https://open.bigmodel.cn/api/paas/v4/chat/completions
+concurrency:
+  delay: 0 #sleep seconds for good qps 
+  threads: 3
+keyframe:
+  threshold: 0.8 #0-1
